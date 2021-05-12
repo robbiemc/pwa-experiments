@@ -1,0 +1,16 @@
+{
+  "name": "Local Storage Reader",
+  "short_name": "LSReader",
+  "description": "Test app to read a field from localStorage.",
+  "icons": [
+    {
+      "src": "icons/icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+  ],
+  "start_url": "/pwa-experiments/local-storage-reader/index.html",
+  "display": "fullscreen",
+  "theme_color": "white",
+  "background_color": "white"
+}

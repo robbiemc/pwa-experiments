@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>localStorage Updater</title>
+
+    <!-- <link rel="stylesheet" href="/style.css" /> -->
+    <!-- <script src="/script.js" defer></script> -->
+    <script>
+      const key = 'test';
+      function refreshValue() {
+        value.innerText = localStorage.getItem(key);
+      }
+      function setValue() {
+        localStorage.setItem(key, new_value.value);
+        refreshValue();
+      }
+    </script>
+  </head>
+  <body onload="refreshValue()">
+    <p>localStorage key <b>test</b></p>
+
+    <p>Current value: <code id="value"></code></p>
+
+    <p>New value: <input id="new_value" /> <button onclick="setValue()">Save</button></p>
+  </body>
+</html>

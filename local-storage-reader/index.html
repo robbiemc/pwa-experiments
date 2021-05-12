@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="local-storage-reader.webmanifest" />
+
+    <title>localStorage Reader App</title>
+
+    <script>
+      const key = 'test';
+      function refreshValue() {
+        value.innerText = localStorage.getItem(key);
+      }
+    </script>
+  </head>
+  <body onload="refreshValue()">
+    <p>localStorage key <b>test</b></p>
+
+    <p>Current value: <code id="value"></code></p>
+  </body>
+</html>
