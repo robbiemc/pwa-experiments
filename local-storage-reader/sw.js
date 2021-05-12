@@ -1,1 +1,1 @@
-// a very interesting service worker
+self.addEventListener('fetch', (e) => e.respondWith(fetch(e.request)));
