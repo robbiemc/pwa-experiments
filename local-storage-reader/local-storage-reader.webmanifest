@@ -4,8 +4,8 @@
   "description": "Test app to read a field from localStorage.",
   "icons": [
     {
-      "src": "icons/icon-32.png",
-      "sizes": "32x32",
+      "src": "icons/icon-150.png",
+      "sizes": "150x150",
       "type": "image/png"
     }
   ],
