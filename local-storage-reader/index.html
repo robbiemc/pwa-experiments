@@ -9,6 +9,12 @@
     <title>localStorage Reader App</title>
 
     <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('/pwa-experiments/local-storage-reader/sw.js')
+          .then(() => { console.log('Registered Service Worker'); });
+      }
+
       const key = 'test';
       function refreshValue() {
         value.innerText = localStorage.getItem(key);
